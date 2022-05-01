@@ -1,0 +1,12 @@
+.button {
+    color: var(--text-primary);
+    font-weight: 600;
+
+    &:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+}
+.icon {
+    color: green;
+}

@@ -1,9 +1,32 @@
+@import '../breakpoints.scss';
 .nav {
+    background-color: transparent;
+    box-shadow: none;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .linksContainer {
+        display: none;
+    }
 }
-.LinkContainer {
-    display: flex;
-    gap: 3rem;
+@include media('>tablet') {
+    .nav {
+        .linksContainer {
+            display: flex;
+            gap: 2.5rem;
+            flex-direction: row;
+            align-items: center;
+        }
+        section {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            width: unset;
+        }
+    }
 }
