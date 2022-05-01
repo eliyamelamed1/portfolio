@@ -3,8 +3,15 @@ import React, { useContext } from 'react';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import styles from '../styles/components/Toggle.module.scss';
+import { useTheme } from 'next-themes';
 
-const Toggle = ({ toggle, theme }) => {
+const Toggle = () => {
+    const { theme, setTheme } = useTheme();
+
+    const toggle = () => {
+        if (theme === 'light') return setTheme('dark');
+        setTheme('light');
+    };
     return (
         <div className={styles.toggle} onClick={toggle}>
             <DarkModeIcon />

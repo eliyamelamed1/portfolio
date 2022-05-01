@@ -15,10 +15,10 @@ const LinkContainer = () => {
     );
 };
 
-const Navbar = ({ toggle, theme }) => {
+const Navbar = () => {
     return (
         <nav className={styles.nav}>
-            <Toggle toggle={toggle} theme={theme} />
+            <Toggle />
             <LinkContainer />
             <UIButton>Contact</UIButton>
         </nav>
