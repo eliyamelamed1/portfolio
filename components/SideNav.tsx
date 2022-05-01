@@ -45,11 +45,14 @@ export default function SideNav() {
 
     const list = (anchor: Anchor) => (
         <Box
-            sx={{
-                width: 250,
+            style={{
+                width: 200,
                 height: '100%',
                 display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
                 alignItems: 'center',
+                border: '1px solid white',
             }}
             className='background'
             role='presentation'
@@ -61,33 +64,38 @@ export default function SideNav() {
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '2rem',
-                    width: '100%',
                     alignItems: 'center',
                 }}
             >
                 {links.map((text, index) => {
                     const Icon = iconList[index];
                     return (
-                        <ListItem button key={text} sx={{ gap: '3rem' }}>
-                            <Icon className='text' />
-                            <UINavBtn>{text}</UINavBtn>
-                        </ListItem>
+                        <button
+                            key={text}
+                            style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                width: '100%',
+                                gap: '2rem',
+                                justifyContent: 'flex-start',
+                            }}
+                            className='icon'
+                        >
+                            <Icon />
+                            <h3>{text}</h3>
+                        </button>
                     );
                 })}
             </List>
         </Box>
     );
+
     return (
         <div className={styles.sideNav} key={anchor}>
             <Button onClick={toggleDrawer(anchor, true)}>
                 <MenuIcon className={styles.sideNavColor} />
             </Button>
-            <Drawer
-                sx={{ width: 250, background: 'black' }}
-                anchor={anchor}
-                open={state[anchor]}
-                onClose={toggleDrawer(anchor, false)}
-            >
+            <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                 {list(anchor)}
             </Drawer>
         </div>

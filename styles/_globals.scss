@@ -7,3 +7,10 @@
 .primary {
     color: var(--primary-color);
 }
+
+.icon {
+    color: var(--text-primary);
+    &:hover {
+        color: var(--primary-color);
+    }
+}
