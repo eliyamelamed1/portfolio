@@ -1,15 +1,25 @@
 @import '../breakpoints.scss';
+.sideNav {
+    position: relative;
+    left: -20px;
+    width: 30px;
+}
+
+.sideNavColor {
+    color: var(--text-primary);
+}
 .nav {
     background-color: transparent;
     box-shadow: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     section {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
+        gap: 1rem;
         align-items: center;
+        width: unset;
     }
     .linksContainer {
         display: none;
@@ -23,11 +33,8 @@
             flex-direction: row;
             align-items: center;
         }
-        section {
-            display: flex;
-            gap: 2.5rem;
-            align-items: center;
-            width: unset;
-        }
+    }
+    .sideNavContainer {
+        display: none;
     }
 }

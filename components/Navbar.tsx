@@ -1,13 +1,11 @@
 import * as React from 'react';
 
-import AppBar from '@mui/material/AppBar';
+import SideNav from './SideNav';
 import Toggle from './Toggle';
-import Toolbar from '@mui/material/Toolbar';
 import UIButton from './UI/UIButton';
 import UINavBtn from './UI/UINavBtn';
+import { links } from '../utils/enum';
 import styles from '../styles/components/Navbar.module.scss';
-
-const links = ['About me', 'Services', 'Experience', 'Skills', 'Portfolio'];
 
 const Navbar = () => {
     const DesktopBar = () => {
@@ -23,6 +21,9 @@ const Navbar = () => {
     return (
         <div className={styles.nav}>
             <DesktopBar />
+            <div className={styles.sideNavContainer}>
+                <SideNav />
+            </div>
             <section>
                 <UIButton>Contact</UIButton>
                 <Toggle />
