@@ -1,3 +1,4 @@
+import Contact from '../components/Contact';
 import Intro from '../components/Intro';
 import Navbar from '../components/Navbar';
 import React from 'react';
@@ -9,6 +10,8 @@ const index = () => {
             <Navbar />
 
             <Intro />
+            <br />
+            <Contact />
         </div>
     );
 };
