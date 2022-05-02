@@ -5,19 +5,20 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    margin-top: 7rem;
     section {
-        margin-block: 2rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
     h1 {
-        font-size: 3rem;
+        font-size: clamp(3rem, 5vw, 5rem);
     }
     p {
-        font-size: 1rem;
+        font-size: clamp(1rem, 5vw, 1.5rem);
+
         font-weight: 500;
-        max-width: 60ch;
+        max-width: 50ch;
     }
     .contactContainer {
         display: flex;
@@ -40,10 +41,10 @@
 @include media('>tablet') {
     .container {
         img {
-            display: unset;
-            background-repeat: no-repeat;
-
-            width: clamp(20rem, 50%, 30rem);
+            display: block;
+            position: relative;
+            top: 30px;
+            width: 40rem;
         }
     }
 }

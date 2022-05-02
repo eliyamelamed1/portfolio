@@ -7,6 +7,7 @@ const index = () => {
     return (
         <div className={styles.container}>
             <Navbar />
+
             <Intro />
         </div>
     );

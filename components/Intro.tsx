@@ -40,7 +40,6 @@ const Intro = () => {
                     />
                 </div>
             </section>
-
             <img src={IntroImage.src} />
         </div>
     );
