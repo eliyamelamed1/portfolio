@@ -1,9 +1,9 @@
 import React from 'react';
 import UIButton from './UI/UIButton';
 
-// import styles from '../styles/components/AboutMe.moudle.scss';
+// import styles from '../styles/components/Intro.moudle.scss';
 
-const AboutMe = () => {
+const Intro = () => {
     return (
         <>
             <h1>
@@ -18,4 +18,4 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default Intro;

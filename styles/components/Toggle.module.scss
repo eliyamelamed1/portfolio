@@ -9,12 +9,19 @@
     cursor: pointer;
 }
 .toggle > * {
+    color: var(--primary-color);
     width: 1rem;
     height: 1rem;
-    color: var(--primary-color);
 }
-.button {
+.dot {
     border-radius: 100%;
     background: var(--primary-color);
     position: absolute;
+}
+
+[data-theme='light'] .dot {
+    left: 2px;
+}
+[data-theme='dark'] .dot {
+    right: 2px;
 }
