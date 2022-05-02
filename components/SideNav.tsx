@@ -17,7 +17,7 @@ import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices
 import TaskIcon from '@mui/icons-material/Task';
 import UINavBtn from './UI/UINavBtn';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-import { links } from '../utils/enum';
+import { navLinks } from '../utils/enum';
 import styles from '../styles/components/Navbar.module.scss';
 
 const iconList = [InfoIcon, MiscellaneousServicesIcon, WorkHistoryIcon, MilitaryTechSharpIcon, TaskIcon];
@@ -67,7 +67,7 @@ export default function SideNav() {
                     alignItems: 'center',
                 }}
             >
-                {links.map((text, index) => {
+                {navLinks.map((text, index) => {
                     const Icon = iconList[index];
                     return (
                         <button

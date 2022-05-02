@@ -4,14 +4,14 @@ import SideNav from './SideNav';
 import Toggle from './Toggle';
 import UIButton from './UI/UIButton';
 import UINavBtn from './UI/UINavBtn';
-import { links } from '../utils/enum';
+import { navLinks } from '../utils/enum';
 import styles from '../styles/components/Navbar.module.scss';
 
 const Navbar = () => {
     const DesktopBar = () => {
         return (
             <div className={styles.linksContainer}>
-                {links.map((page) => (
+                {navLinks.map((page) => (
                     <UINavBtn key={page}>{page}</UINavBtn>
                 ))}
             </div>
@@ -25,7 +25,7 @@ const Navbar = () => {
                 <SideNav />
             </div>
             <section>
-                <UIButton>Contact</UIButton>
+                <UIButton>Get In Touch</UIButton>
                 <Toggle />
             </section>
         </div>
