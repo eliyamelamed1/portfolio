@@ -28,9 +28,9 @@ const Contact = () => {
                 <span>Contact Me</span>
             </h1>
             <section>
-                <TextField label='Name' name='name' className='input' required />
-                <TextField label='E-mail' name='email' className='input' required />
-                <TextField label='Message' name='message' multiline />
+                <TextField label='Name' name='name' className='input' variant='filled' required />
+                <TextField label='E-mail' name='email' className='input' required variant='filled' />
+                <TextField label='Message' name='message' multiline variant='filled' />
                 <UIButton>Submit</UIButton>
             </section>
         </form>
