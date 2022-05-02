@@ -1,4 +1,5 @@
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 import Intro from '../components/Intro';
 import Navbar from '../components/Navbar';
 import React from 'react';
@@ -8,10 +9,10 @@ const index = () => {
     return (
         <div className={styles.container}>
             <Navbar />
-
             <Intro />
             <br />
             <Contact />
+            <Footer />
         </div>
     );
 };

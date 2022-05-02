@@ -32,9 +32,9 @@ span {
     color: var(--primary-color);
     font-weight: inherit;
 }
+
 html {
     background-color: var(--background-color);
-    padding: clamp(1rem, 4vw, 5rem);
     z-index: 1;
     font-size: 16px;
     color: inherit;

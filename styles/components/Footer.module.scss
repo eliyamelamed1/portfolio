@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img {
+        width: 100%;
+        position: relative;
+        top: 5px;
+        height: 30rem;
+    }
+    section {
+        position: relative;
+        top: 26rem;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .contactContainer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        width: fit-content;
+        gap: 3.5rem;
+    }
+    .contactIcons {
+        font-size: 3rem;
+        color: var(--text-primary);
+        cursor: pointer;
+    }
+}
