@@ -6,7 +6,7 @@ import { BsGithub } from 'react-icons/Bs';
 import { FaPython } from 'react-icons/fa';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
-import IntroImage from '../assets/intro.svg';
+import IntroImage from '../assets/laptop.svg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import React from 'react';
 import UIButton from './UI/UIButton';
@@ -26,7 +26,9 @@ const Intro = () => {
                     Frontend Developer / Fullstack developer with a flair for thinking out of the box and writing
                     elegant solutions
                 </p>
-                <UIButton>Download CV</UIButton>
+                <a href='../assets/Eliya+Melamed+Resume.pdf' download>
+                    <UIButton>Download CV</UIButton>
+                </a>
                 <div className={styles.contactContainer}>
                     <GitHubIcon
                         className={styles.contactIcons}
@@ -38,6 +40,8 @@ const Intro = () => {
                     />
                 </div>
             </section>
+
+            <img src={IntroImage.src} />
         </div>
     );
 };

@@ -25,7 +25,7 @@ const Navbar = () => {
                 <SideNav />
             </div>
             <section>
-                <UIButton>Get In Touch</UIButton>
+                <UIButton>Contact</UIButton>
                 <Toggle />
             </section>
         </div>

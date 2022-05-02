@@ -20,6 +20,9 @@
         gap: 2.5rem;
         align-items: center;
         width: unset;
+        button {
+            display: none;
+        }
     }
     .linksContainer {
         display: none;
@@ -32,6 +35,11 @@
             gap: 2.5rem;
             flex-direction: row;
             align-items: center;
+        }
+        section {
+            button {
+                display: unset;
+            }
         }
     }
     .sideNavContainer {
