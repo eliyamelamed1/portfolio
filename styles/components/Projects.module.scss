@@ -1,0 +1,26 @@
+.container {
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+    .swiper {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 1rem;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+        column-gap: 2rem;
+        row-gap: 4rem;
+        margin-inline: 5rem;
+    }
+
+    img {
+        box-shadow: 0 2px 16px 2px rgb(0 0 0 / 20%);
+        border-radius: 10px;
+        width: clamp(20rem, 50vw, 24rem);
+        flex-basis: 40%;
+    }
+}

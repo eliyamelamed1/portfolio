@@ -5,6 +5,7 @@ import { SiReact, SiTypescript } from 'react-icons/si';
 
 import { BsGithub } from 'react-icons/Bs';
 import { FaPython } from 'react-icons/fa';
+import { icons } from 'react-icons/lib';
 import { motion } from 'framer-motion';
 import styles from '../styles/pages/index.module.scss';
 
@@ -25,31 +26,23 @@ const iconList = [
     <SiPytest className={styles.skillIcons} key={13} />,
     <BsGithub className={styles.skillIcons} key={14} />,
 ];
+
 const Icons = () => {
     const [position, setPosition] = useState(0);
+    const onClick = () => {
+        setPosition(position + 1);
+    };
     return (
-        <div className={styles.iconsContainer}>
+        <motion.div className={styles.iconsContainer} drag='x' dragConstraints={{ right: position }}>
+            <button onClick={onClick}>Click</button>
             {iconList.map((icon, index) => {
                 return (
-                    <motion.section
-                        className={styles.iconsContainer}
-                        initial={{ scale: 0 }}
-                        animate={{
-                            rotate: 0,
-                            left: `${(index - position) * 60 - 30}vw`,
-                            scale: 1,
-                        }}
-                        transition={{
-                            stiffness: 260,
-                            dumping: 20,
-                        }}
-                        key={index}
-                    >
+                    <motion.section className={styles.iconsContainer} key={index}>
                         {icon}
                     </motion.section>
                 );
             })}
-        </div>
+        </motion.div>
     );
 };
 

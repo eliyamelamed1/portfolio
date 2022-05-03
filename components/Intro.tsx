@@ -4,6 +4,7 @@ import IntroImage from '../assets/laptop.svg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import React from 'react';
 import UIButton from './UI/UIButton';
+import { motion } from 'framer-motion';
 import { outerLinks } from '../utils/enum';
 import styles from '../styles/components/Intro.module.scss';
 
@@ -11,14 +12,32 @@ const Intro = () => {
     return (
         <div className={styles.container}>
             <section>
-                <h1>
+                <motion.h1>
                     Hi! I Am
                     <span> Eliya Melamed</span>
-                </h1>
-                <p>Fullstack developer with a flair for writing elegant solutions and thinking outside of the box</p>
-                <a href='../assets/Eliya+Melamed+Resume.pdf' download>
+                </motion.h1>
+                <motion.p
+                    initial={{
+                        opacity: 0,
+                    }}
+                    animate={{
+                        opacity: 1,
+                    }}
+                    transition={{ delay: 0.5, duration: 2 }}
+                >
+                    Fullstack developer with a flair for writing elegant solutions and thinking outside of the box
+                </motion.p>
+                <motion.a
+                    href='../assets/Eliya+Melamed+Resume.pdf'
+                    download
+                    initial={{
+                        x: '-100vw',
+                    }}
+                    animate={{ x: 0, type: 'spring' }}
+                    transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}
+                >
                     <UIButton>Download CV</UIButton>
-                </a>
+                </motion.a>
                 <div className={styles.contactContainer}>
                     <GitHubIcon
                         className={styles.contactIcons}

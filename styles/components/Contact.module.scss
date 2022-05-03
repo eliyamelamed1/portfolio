@@ -5,6 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 3rem;
+    column-gap: 7rem;
 
     h1 {
         font-size: 2.3rem;
@@ -32,6 +34,5 @@
     .container {
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
     }
 }
