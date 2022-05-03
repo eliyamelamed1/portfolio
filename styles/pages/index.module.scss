@@ -1,4 +1,13 @@
 .container {
+    .iconsContainer {
+        display: flex;
+        justify-content: space-evenly;
+        .skillIcons {
+            color: var(--primary-color);
+            font-size: 3rem;
+        }
+    }
+
     .hr {
         border: 1px solid var(--primary-color);
     }

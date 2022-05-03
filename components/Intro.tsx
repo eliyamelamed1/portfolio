@@ -1,9 +1,3 @@
-import { DiDjango, DiHtml5, DiPostgresql, DiSass } from 'react-icons/Di';
-import { SiCss3, SiJavascript, SiJest, SiMaterialui, SiNextdotjs, SiPytest, SiRedux } from 'react-icons/Si';
-import { SiReact, SiTypescript } from 'react-icons/si';
-
-import { BsGithub } from 'react-icons/Bs';
-import { FaPython } from 'react-icons/fa';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
 import IntroImage from '../assets/laptop.svg';
@@ -43,23 +37,3 @@ const Intro = () => {
 };
 
 export default Intro;
-
-{
-    /* <section>
-<SiTypescript className={styles.skillIcons} />
-<SiReact className={styles.skillIcons} />
-<DiDjango className={styles.skillIcons} />
-<FaPython className={styles.skillIcons} />
-<SiJavascript className={styles.skillIcons} />
-<SiCss3 className={styles.skillIcons} />
-<DiHtml5 className={styles.skillIcons} />
-<SiRedux className={styles.skillIcons} />
-<DiPostgresql className={styles.skillIcons} />
-<DiSass className={styles.skillIcons} />
-<SiNextdotjs className={styles.skillIcons} />
-<SiJest className={styles.skillIcons} />
-<SiMaterialui className={styles.skillIcons} />
-<SiPytest className={styles.skillIcons} />
-<BsGithub className={styles.skillIcons} />
-</section> */
-}
