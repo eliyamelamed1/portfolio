@@ -27,7 +27,7 @@ export default function UIPopover({ children, imageSrc }: UIPopoverTypes) {
             <motion.button
                 onClick={handleClick}
                 whileHover={{
-                    scale: 1.2,
+                    scale: 1.1,
                 }}
             >
                 <img src={imageSrc} />
@@ -41,7 +41,7 @@ export default function UIPopover({ children, imageSrc }: UIPopoverTypes) {
                         transform: 'translate(-50%, -50%)',
                         backgroundColor: 'white',
                         borderRadius: '2rem',
-                        width: 'clamp(300px,90vw,800px)',
+                        width: 'clamp(300px,80vw,800px)',
                         maxHeight: '90vh',
                         overflow: 'auto',
                     }}

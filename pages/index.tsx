@@ -16,7 +16,6 @@ const index = () => {
         <div className={styles.container}>
             <Navbar />
             <Intro />
-            <ImageSlider />
             <Skills />
             <Projects />
             <HrSeparator />

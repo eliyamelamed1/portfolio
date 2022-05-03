@@ -13,8 +13,9 @@ const Intro = () => {
         <div className={styles.container}>
             <section>
                 <motion.h1>
-                    Hi! I Am
-                    <span> Eliya Melamed</span>
+                    Not Your Average
+                    <br />
+                    <span> Software Engineer</span>
                 </motion.h1>
                 <motion.p
                     initial={{
