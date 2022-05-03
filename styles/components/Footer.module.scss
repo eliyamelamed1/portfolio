@@ -2,22 +2,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    img {
-        width: 100%;
-        position: relative;
-        top: 5px;
-        height: 30rem;
-    }
-    section {
-        position: relative;
-        top: 26rem;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-    }
+    align-items: center;
+    background-color: var(--primary-color);
+    gap: 1rem;
+    padding-block: 2rem;
+
     .contactContainer {
         display: flex;
         gap: 1rem;
