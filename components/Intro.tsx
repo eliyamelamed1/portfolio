@@ -19,13 +19,9 @@ const Intro = () => {
             <section>
                 <h1>
                     Hi! I Am
-                    <br />
-                    <span>Eliya Melamed</span>
+                    <span> Eliya Melamed</span>
                 </h1>
-                <p>
-                    Frontend Developer / Fullstack developer with a flair for thinking out of the box and writing
-                    elegant solutions
-                </p>
+                <p>Fullstack developer with a flair for writing elegant solutions and thinking outside of the box</p>
                 <a href='../assets/Eliya+Melamed+Resume.pdf' download>
                     <UIButton>Download CV</UIButton>
                 </a>
@@ -40,6 +36,7 @@ const Intro = () => {
                     />
                 </div>
             </section>
+
             <img src={IntroImage.src} />
         </div>
     );
