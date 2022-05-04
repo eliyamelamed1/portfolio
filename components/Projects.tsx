@@ -7,8 +7,6 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/effect-flip';
 import 'swiper/css/autoplay';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import ProjectCard from './ProjectCard';
 import React from 'react';
 import UIPopover from './UI/UIPopover';
@@ -32,14 +30,10 @@ const Projects = () => {
                 <UIPopover imageSrc={zbite.src} id={projectsObj.zbite.id}>
                     <ProjectCard />
                 </UIPopover>
-                <UIPopover imageSrc={weather.src} id={projectsObj.zbite.id}>
+                <UIPopover imageSrc={tractor.src} id={projectsObj.tractor.id}>
                     <ProjectCard />
                 </UIPopover>
-
-                <UIPopover imageSrc={tractor.src} id={projectsObj.weather.id}>
-                    <ProjectCard />
-                </UIPopover>
-                <UIPopover imageSrc={snailon.src} id={projectsObj.weather.id}>
+                <UIPopover imageSrc={weather.src} id={projectsObj.weather.id}>
                     <ProjectCard />
                 </UIPopover>
             </div>

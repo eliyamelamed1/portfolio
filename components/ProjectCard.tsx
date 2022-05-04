@@ -31,8 +31,14 @@ const ProjectCard = () => {
             </h4>
 
             <section>
-                <UIButton>Website</UIButton>
-                <UIButton>Code</UIButton>
+                <UIButton
+                    onClick={typeof window !== 'undefined' ? () => window.open(project.links.website) : () => null}
+                >
+                    Website
+                </UIButton>
+                <UIButton onClick={typeof window !== 'undefined' ? () => window.open(project.links.code) : () => null}>
+                    Code
+                </UIButton>
             </section>
         </div>
     );

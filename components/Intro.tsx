@@ -50,8 +50,9 @@ const Intro = () => {
                     />
                 </div>
             </section>
-
-            <img src={IntroImage.src} />
+            <i>
+                <Image src={IntroImage.src} alt='project' quality={100} layout='responsive' width={1} height={0.8} />
+            </i>
         </div>
     );
 };

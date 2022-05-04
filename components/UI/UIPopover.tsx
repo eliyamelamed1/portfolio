@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { Box } from '@mui/system';
+import Image from 'next/image';
 import Modal from '@mui/material/Modal';
 import ProjectCard from '../ProjectCard';
 import UIButton from './UIButton';
@@ -32,7 +33,7 @@ export default function UIPopover({ children, imageSrc, id }: UIPopoverTypes) {
     };
 
     return (
-        <>
+        <div className={styles.container}>
             <ProjectContext.Provider value={value}>
                 <motion.button
                     onClick={handleClick}
@@ -40,12 +41,14 @@ export default function UIPopover({ children, imageSrc, id }: UIPopoverTypes) {
                         scale: 1.1,
                     }}
                 >
-                    <img src={imageSrc} />
+                    <i>
+                        <Image src={imageSrc} layout='responsive' width={16} height={9} alt='project' quality={100} />
+                    </i>
                 </motion.button>
                 <Modal open={openForm} onClose={handleClose}>
-                    <Box className={styles.container}>{children}</Box>
+                    <Box className={styles.popup}>{children}</Box>
                 </Modal>
             </ProjectContext.Provider>
-        </>
+        </div>
     );
 }
