@@ -7,7 +7,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 4rem;
-
+    .title1 {
+        color: var(--text-primary);
+    }
     @include media('>desktop') {
         justify-content: space-between;
     }

@@ -4,6 +4,7 @@ import SideNav from './SideNav';
 import Toggle from './Toggle';
 import UIButton from './UI/UIButton';
 import UINavBtn from './UI/UINavBtn';
+import { motion } from 'framer-motion';
 import { navLinks } from '../utils/enum';
 import styles from '../styles/components/Navbar.module.scss';
 
@@ -19,7 +20,14 @@ const Navbar = () => {
     };
 
     return (
-        <div className={styles.nav}>
+        <motion.div
+            className={styles.nav}
+            initial={{
+                y: '-20vw',
+            }}
+            animate={{ y: 0, type: 'spring' }}
+            transition={{ type: 'spring', stiffness: 120 }}
+        >
             <DesktopBar />
             <div className={styles.sideNavContainer}>
                 <SideNav />
@@ -28,7 +36,7 @@ const Navbar = () => {
                 <UIButton>Contact</UIButton>
                 <Toggle />
             </section>
-        </div>
+        </motion.div>
     );
 };
 export default Navbar;
