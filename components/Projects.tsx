@@ -13,6 +13,7 @@ import ProjectCard from './ProjectCard';
 import React from 'react';
 import UIPopover from './UI/UIPopover';
 import { motion } from 'framer-motion';
+import { projectsObj } from '../utils/enum';
 import snailon from '../assets/snailon.bmp';
 import styles from '../styles/components/Projects.module.scss';
 import tractor from '../assets/tractor.bmp';
@@ -28,12 +29,19 @@ const Projects = () => {
                 <span>Projects</span>
             </h1>
             <div className={styles.swiper}>
-                <UIPopover imageSrc={zbite.src}>
+                <UIPopover imageSrc={zbite.src} id={projectsObj.zbite.id}>
                     <ProjectCard />
                 </UIPopover>
-                <UIPopover imageSrc={weather.src} />
-                <UIPopover imageSrc={tractor.src} />
-                <UIPopover imageSrc={snailon.src} />
+                <UIPopover imageSrc={weather.src} id={projectsObj.zbite.id}>
+                    <ProjectCard />
+                </UIPopover>
+
+                <UIPopover imageSrc={tractor.src} id={projectsObj.weather.id}>
+                    <ProjectCard />
+                </UIPopover>
+                <UIPopover imageSrc={snailon.src} id={projectsObj.weather.id}>
+                    <ProjectCard />
+                </UIPopover>
             </div>
         </div>
     );

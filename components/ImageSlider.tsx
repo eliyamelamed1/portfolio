@@ -1,18 +1,16 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Pagination } from 'swiper';
-import zbite from '../assets/zbite.bmp';
+import React from 'react';
 
 interface PropTypes {
     imageArray: any[];
 }
 
 export default function ImageSlider({ imageArray }: PropTypes) {
-    imageArray = [zbite.src, zbite.src];
     return (
         <div>
             <Swiper
@@ -23,9 +21,9 @@ export default function ImageSlider({ imageArray }: PropTypes) {
                 modules={[Pagination]}
                 className='mySwiper'
             >
-                {imageArray.map((imageSrc) => {
+                {imageArray.map((imageSrc, index) => {
                     return (
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <img src={imageSrc} />
                         </SwiperSlide>
                     );

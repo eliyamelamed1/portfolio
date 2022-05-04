@@ -4,51 +4,48 @@ import { Box } from '@mui/system';
 import Modal from '@mui/material/Modal';
 import ProjectCard from '../ProjectCard';
 import UIButton from './UIButton';
+import { createContext } from 'react';
 import { motion } from 'framer-motion';
+import styles from '../../styles/components/UI/UIPopover.module.scss';
 import zbite from '../../assets/zbite.bmp';
+
+export const ProjectContext = createContext({ projectId: '', setProjectId: (arg: string) => {} });
 
 interface UIPopoverTypes {
     imageSrc: string;
-    childrem: any;
+    id: string;
+    children: any;
 }
-export default function UIPopover({ children, imageSrc }: UIPopoverTypes) {
+export default function UIPopover({ children, imageSrc, id }: UIPopoverTypes) {
+    const [projectId, setProjectId] = React.useState('');
+    const value = { projectId, setProjectId };
     const [openForm, setOpenForm] = React.useState(false);
 
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+        setProjectId(id);
         setOpenForm(true);
     };
 
     const handleClose = () => {
+        setProjectId('');
         setOpenForm(false);
     };
 
     return (
         <>
-            <motion.button
-                onClick={handleClick}
-                whileHover={{
-                    scale: 1.1,
-                }}
-            >
-                <img src={imageSrc} />
-            </motion.button>
-            <Modal open={openForm} onClose={handleClose}>
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        backgroundColor: 'white',
-                        borderRadius: '2rem',
-                        width: 'clamp(300px,80vw,800px)',
-                        maxHeight: '90vh',
-                        overflow: 'auto',
+            <ProjectContext.Provider value={value}>
+                <motion.button
+                    onClick={handleClick}
+                    whileHover={{
+                        scale: 1.1,
                     }}
                 >
-                    {children}
-                </Box>
-            </Modal>
+                    <img src={imageSrc} />
+                </motion.button>
+                <Modal open={openForm} onClose={handleClose}>
+                    <Box className={styles.container}>{children}</Box>
+                </Modal>
+            </ProjectContext.Provider>
         </>
     );
 }
