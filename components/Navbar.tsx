@@ -1,20 +1,38 @@
 import * as React from 'react';
 
+import { Link } from 'react-scroll';
 import SideNav from './SideNav';
 import Toggle from './Toggle';
 import UIButton from './UI/UIButton';
 import UINavBtn from './UI/UINavBtn';
 import { motion } from 'framer-motion';
-import { navLinks } from '../utils/enum';
 import styles from '../styles/components/Navbar.module.scss';
+import stylesNav from '../styles/components/UI/UINavBtn.module.scss';
+
+const navLinks = ['Home', 'Skills', 'Projects'];
 
 const Navbar = () => {
     const DesktopBar = () => {
         return (
             <div className={styles.linksContainer}>
-                {navLinks.map((page) => (
-                    <UINavBtn key={page}>{page}</UINavBtn>
-                ))}
+                {navLinks.map((link, index) => {
+                    return (
+                        <UINavBtn key={index}>
+                            <Link
+                                to={link}
+                                className={stylesNav.button}
+                                style={{
+                                    textDecoration: 'unset',
+                                }}
+                                smooth={true}
+                                spy={true}
+                                duration={500}
+                            >
+                                {link}
+                            </Link>
+                        </UINavBtn>
+                    );
+                })}
             </div>
         );
     };
@@ -33,7 +51,18 @@ const Navbar = () => {
                 <SideNav />
             </div>
             <section>
-                <UIButton>Contact</UIButton>
+                <Link
+                    to='Contact'
+                    className={stylesNav.button}
+                    style={{
+                        textDecoration: 'unset',
+                    }}
+                    smooth={true}
+                    spy={true}
+                    duration={500}
+                >
+                    <UIButton>Contact</UIButton>
+                </Link>
                 <Toggle />
             </section>
         </motion.div>

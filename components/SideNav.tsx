@@ -2,27 +2,24 @@ import * as React from 'react';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import InfoIcon from '@mui/icons-material/Info';
+import { Link } from 'react-scroll';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import MilitaryTechSharpIcon from '@mui/icons-material/MilitaryTechSharp';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import TaskIcon from '@mui/icons-material/Task';
 import UINavBtn from './UI/UINavBtn';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-import { navLinks } from '../utils/enum';
 import styles from '../styles/components/Navbar.module.scss';
+import stylesNav from '../styles/components/UI/UINavBtn.module.scss';
 
 const iconList = [InfoIcon, MiscellaneousServicesIcon, WorkHistoryIcon, MilitaryTechSharpIcon, TaskIcon];
+const navLinks = ['Home', 'Skills', 'Projects', 'Contact'];
 
 type Anchor = 'left';
+
 export default function SideNav() {
     const [state, setState] = React.useState({
         top: false,
@@ -67,23 +64,13 @@ export default function SideNav() {
                     alignItems: 'center',
                 }}
             >
-                {navLinks.map((text, index) => {
-                    const Icon = iconList[index];
+                {navLinks.map((link, index) => {
                     return (
-                        <button
-                            key={text}
-                            style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                width: '100%',
-                                gap: '2rem',
-                                justifyContent: 'flex-start',
-                            }}
-                            className='icon'
-                        >
-                            <Icon />
-                            <h3>{text}</h3>
-                        </button>
+                        <UINavBtn key={index}>
+                            <Link to={link} className={stylesNav.button} smooth={true} spy={true} duration={500}>
+                                {link}
+                            </Link>
+                        </UINavBtn>
                     );
                 })}
             </List>

@@ -21,7 +21,7 @@ const Contact = () => {
     };
 
     return (
-        <form className={styles.container} ref={form} onSubmit={onSubmit}>
+        <form className={styles.container} ref={form} onSubmit={onSubmit} id='Contact'>
             <h1>
                 Get In Touch
                 <br />

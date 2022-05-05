@@ -31,7 +31,7 @@ const Intro = () => {
     const title1 = 'Not Your Average';
     const title2 = 'Software Engineer';
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='Home'>
             <section>
                 <motion.h1 variants={sentence} initial='hidden' animate='visible'>
                     {title1.split('').map((char, index) => {
@@ -103,7 +103,7 @@ const Intro = () => {
                     duration: 2,
                 }}
                 whileHover={{
-                    scale: 1.2,
+                    scale: 1.4,
                 }}
             >
                 <Image src={IntroImage.src} alt='project' quality={100} layout='responsive' width={1} height={0.8} />

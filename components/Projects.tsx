@@ -20,7 +20,7 @@ import zbite from '../assets/zbite.bmp';
 
 const Projects = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='Projects'>
             <h1>
                 Recent Work
                 <br />

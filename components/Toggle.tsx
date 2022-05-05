@@ -1,6 +1,7 @@
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import React from 'react';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import { motion } from 'framer-motion';
 import styles from '../styles/components/Toggle.module.scss';
 import { useTheme } from 'next-themes';
 
@@ -12,11 +13,17 @@ const Toggle = () => {
         setTheme('light');
     };
     return (
-        <div className={styles.toggle} onClick={toggle}>
+        <motion.div
+            className={styles.toggle}
+            onClick={toggle}
+            whileHover={{
+                scale: 1.2,
+            }}
+        >
             <DarkModeIcon />
             <WbSunnyIcon />
             <div className={styles.dot}></div>
-        </div>
+        </motion.div>
     );
 };
 

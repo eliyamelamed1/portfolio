@@ -1,9 +1,7 @@
-import snailon from '../assets/snailon.bmp';
 import tractor from '../assets/tractor.bmp';
 import weather from '../assets/weather.bmp';
 import zbite from '../assets/zbite.bmp';
 
-export const navLinks = ['Home', 'Skills', 'Projects'];
 export const outerLinks = {
     github: 'https://github.com/eliyamelamed1',
     linkedin: 'https://www.linkedin.com/in/eliyamelamed1/',
