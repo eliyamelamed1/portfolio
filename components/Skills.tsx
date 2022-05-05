@@ -21,7 +21,7 @@ const Skills = () => {
                 <h1>Front-end Developer</h1>
                 <p>I like to code things from scratch and enjoy bringing ideas to life</p>
                 <h2>Technologies</h2>
-                <span>TypeScript, JavaScript, React.js, Next.js, Scss, Css,Material UI, Jest, FramerMotion</span>
+                <span>TypeScript, JavaScript, React.js, Next.js, Scss, Css, Material UI, Jest, Framer Motion</span>
             </motion.section>
         </div>
     );
