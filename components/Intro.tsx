@@ -95,13 +95,13 @@ const Intro = () => {
                 </motion.div>
             </section>
             <motion.i
-                initial={{
-                    opacity: 0,
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ rotate: 360, scale: 1, opacity: 1 }}
+                transition={{
+                    type: 'spring',
+                    damping: 20,
+                    duration: 2,
                 }}
-                animate={{
-                    opacity: 1,
-                }}
-                transition={{ duration: 2 }}
             >
                 <Image src={IntroImage.src} alt='project' quality={100} layout='responsive' width={1} height={0.8} />
             </motion.i>
