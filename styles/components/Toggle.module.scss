@@ -20,8 +20,5 @@
 }
 
 [data-theme='light'] .dot {
-    left: 2px;
-}
-[data-theme='dark'] .dot {
-    right: 2px;
+    transform: translateX(100%);
 }
