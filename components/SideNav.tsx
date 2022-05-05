@@ -3,19 +3,13 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
-import InfoIcon from '@mui/icons-material/Info';
 import { Link } from 'react-scroll';
 import List from '@mui/material/List';
 import MenuIcon from '@mui/icons-material/Menu';
-import MilitaryTechSharpIcon from '@mui/icons-material/MilitaryTechSharp';
-import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
-import TaskIcon from '@mui/icons-material/Task';
 import UINavBtn from './UI/UINavBtn';
-import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import styles from '../styles/components/Navbar.module.scss';
 import stylesNav from '../styles/components/UI/UINavBtn.module.scss';
 
-const iconList = [InfoIcon, MiscellaneousServicesIcon, WorkHistoryIcon, MilitaryTechSharpIcon, TaskIcon];
 const navLinks = ['Home', 'Skills', 'Projects', 'Contact'];
 
 type Anchor = 'left';
