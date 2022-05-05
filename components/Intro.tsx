@@ -102,6 +102,9 @@ const Intro = () => {
                     damping: 20,
                     duration: 2,
                 }}
+                whileHover={{
+                    scale: 1.2,
+                }}
             >
                 <Image src={IntroImage.src} alt='project' quality={100} layout='responsive' width={1} height={0.8} />
             </motion.i>
