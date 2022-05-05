@@ -21,7 +21,7 @@ export const projectsObj = {
         ],
         technologies:
             'PostgreSQL, Python, TypeScript, Django, React, Next, Sass/CSS, Material UI, Pytest, Jest, ElasticSearch.',
-        imageArray: [zbite.src, zbite.src],
+        imageArray: [zbite.src],
         links: {
             code: 'https://github.com/eliyamelamed1/zbite',
             website: 'https://zbite.vercel.app',
@@ -40,7 +40,7 @@ export const projectsObj = {
             '● Animations included',
         ],
         technologies: 'TypeScript, React, Sass/CSS, Material UI',
-        imageArray: [weather.src, weather.src],
+        imageArray: [weather.src],
         links: {
             code: 'https://github.com/eliyamelamed1/WeatherApp',
             website: 'https://weather-app-eliyamelamed1.vercel.app/',
@@ -57,24 +57,7 @@ export const projectsObj = {
             '● Implemented Searchbar that support Autocomplete',
         ],
         technologies: 'TypeScript, Next.js, React, Sass/CSS, Material UI',
-        imageArray: [tractor.src, tractor.src],
-        links: {
-            code: 'https://github.com/eliyamelamed1/seo-website',
-            website: 'https://seo-website-pi.vercel.app/',
-        },
-    },
-    snailon: {
-        id: 'snailon',
-        projectName: 'Tractors.fr',
-        description: 'a Beautiful Website I built and designed for my client in the construction industry',
-        bullets: [
-            '● Connected to a postal code and city API to ease the searching process for customers',
-            '● Wrote the app using Next.js with keen focus of improving SEO rating',
-            '● Developed a website for a client of the tractor renting industry.',
-            '● Implemented Searchbar that support Autocomplete',
-        ],
-        technologies: 'TypeScript, Next.js, React, Sass/CSS, Material UI',
-        imageArray: [tractor.src, zbite.src],
+        imageArray: [tractor.src],
         links: {
             code: 'https://github.com/eliyamelamed1/seo-website',
             website: 'https://seo-website-pi.vercel.app/',
