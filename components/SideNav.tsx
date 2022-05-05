@@ -40,7 +40,7 @@ export default function SideNav() {
         setState({ ...state, [anchor]: open });
     };
 
-    const list = (anchor: Anchor) => (
+    const LinkLists = (anchor: Anchor) => (
         <Box
             style={{
                 width: 200,
@@ -83,7 +83,7 @@ export default function SideNav() {
                 <MenuIcon className={styles.sideNavColor} />
             </Button>
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-                {list(anchor)}
+                <LinkLists anchor={anchor} />
             </Drawer>
         </div>
     );
