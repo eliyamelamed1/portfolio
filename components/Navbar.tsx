@@ -41,9 +41,9 @@ const Navbar = () => {
         <motion.div
             className={styles.nav}
             initial={{
-                y: '-20vw',
+                x: '-20vw',
             }}
-            animate={{ y: 0, type: 'spring' }}
+            animate={{ x: 0, type: 'spring' }}
             transition={{ type: 'spring', stiffness: 120 }}
         >
             <DesktopBar />
