@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { Box } from '@mui/system';
+import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import Modal from '@mui/material/Modal';
 import ProjectCard from '../ProjectCard';
@@ -46,7 +47,10 @@ export default function UIPopover({ children, imageSrc, id }: UIPopoverTypes) {
                     </i>
                 </motion.button>
                 <Modal open={openForm} onClose={handleClose}>
-                    <Box className={styles.popup}>{children}</Box>
+                    <Box className={styles.popup}>
+                        {children}
+                        <CloseIcon className={styles.closePopup} onClick={() => setOpenForm(false)} />
+                    </Box>
                 </Modal>
             </ProjectContext.Provider>
         </div>

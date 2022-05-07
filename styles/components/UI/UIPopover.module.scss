@@ -22,3 +22,12 @@
     max-height: 90vh;
     overflow: auto;
 }
+.closePopup {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 2;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+}
