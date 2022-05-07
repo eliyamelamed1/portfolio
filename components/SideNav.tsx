@@ -76,7 +76,13 @@ export default function SideNav() {
             <Button onClick={toggleDrawer(anchor, true)}>
                 <MenuIcon className={styles.sideNavColor} />
             </Button>
-            <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
+            <Drawer
+                anchor={anchor}
+                open={state[anchor]}
+                onClose={toggleDrawer(anchor, false)}
+                ModalProps={{ disableRestoreFocus: true }}
+                disableRestoreFocus
+            >
                 <LinkLists anchor={anchor} />
             </Drawer>
         </div>
