@@ -49,7 +49,7 @@ export default function UIPopover({ children, imageSrc, id }: UIPopoverTypes) {
                 <Modal open={openForm} onClose={handleClose}>
                     <Box className={styles.popup}>
                         {children}
-                        <CloseIcon className={styles.closePopup} onClick={() => setOpenForm(false)} />
+                        <CloseIcon className={styles.closePopup} onClick={() => setOpenForm(false)} fontSize='medium' />
                     </Box>
                 </Modal>
             </ProjectContext.Provider>

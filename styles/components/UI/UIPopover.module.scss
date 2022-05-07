@@ -24,10 +24,10 @@
 }
 .closePopup {
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 1.5rem;
+    right: 1.5rem;
     z-index: 2;
     font-size: 3rem;
-    color: black;
+    color: var(--primary-color);
     cursor: pointer;
 }
