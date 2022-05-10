@@ -67,7 +67,7 @@ const Icons = () => {
                         key={index}
                         variants={child}
                         whileHover={{
-                            scale: [2, 1],
+                            scale: [1.7, 1],
                         }}
                     >
                         {icon}

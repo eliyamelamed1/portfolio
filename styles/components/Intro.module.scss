@@ -1,7 +1,7 @@
 @import '../breakpoints.scss';
 
 .container {
-    padding: clamp(1rem, 4vw, 5rem);
+    padding: clamp(1rem, 4vw, 4rem);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
