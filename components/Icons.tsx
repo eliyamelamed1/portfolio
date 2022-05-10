@@ -1,11 +1,19 @@
 import { DiDjango, DiHtml5, DiPostgresql, DiSass } from 'react-icons/Di';
-import React, { useEffect, useState } from 'react';
-import { SiCss3, SiJavascript, SiJest, SiMaterialui, SiNextdotjs, SiPytest, SiRedux } from 'react-icons/Si';
-import { SiReact, SiTypescript } from 'react-icons/si';
+import {
+    SiCss3,
+    SiJavascript,
+    SiJest,
+    SiMaterialui,
+    SiNextdotjs,
+    SiPytest,
+    SiReact,
+    SiRedux,
+    SiTypescript,
+} from 'react-icons/Si';
 
 import { BsGithub } from 'react-icons/Bs';
 import { FaPython } from 'react-icons/fa';
-import { icons } from 'react-icons/lib';
+import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/pages/index.module.scss';
 
@@ -27,17 +35,41 @@ const iconList = [
     <BsGithub className={styles.skillIcons} key={14} />,
 ];
 
+const parent = {
+    hidden: { opacity: 1 },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 0.5,
+            staggerChildren: 0.1,
+        },
+    },
+};
+
+const child = {
+    hidden: {
+        opacity: 0,
+        scale: 0,
+    },
+    visible: {
+        opacity: 1,
+        scale: [2, 1],
+    },
+};
+
 const Icons = () => {
-    const [position, setPosition] = useState(0);
-    const onClick = () => {
-        setPosition(position + 1);
-    };
     return (
-        <motion.div className={styles.iconsContainer} drag='x' dragConstraints={{ right: position }}>
-            <button onClick={onClick}>Click</button>
+        <motion.div variants={parent} className={styles.iconsContainer} initial='hidden' animate='visible'>
             {iconList.map((icon, index) => {
                 return (
-                    <motion.section className={styles.iconsContainer} key={index}>
+                    <motion.section
+                        className={styles.skillIcons}
+                        key={index}
+                        variants={child}
+                        whileHover={{
+                            scale: [2, 1],
+                        }}
+                    >
                         {icon}
                     </motion.section>
                 );

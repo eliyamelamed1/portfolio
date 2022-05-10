@@ -44,7 +44,8 @@ html {
     text-decoration: none;
     font-weight: 500;
     color: var(--text-primary);
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
