@@ -1,4 +1,4 @@
-import { DiDjango, DiHtml5, DiPostgresql, DiSass } from 'react-icons/Di';
+import { DiDjango, DiHtml5, DiPostgresql, DiSass } from 'react-icons/di';
 import {
     SiCss3,
     SiJavascript,
@@ -9,9 +9,9 @@ import {
     SiReact,
     SiRedux,
     SiTypescript,
-} from 'react-icons/Si';
+} from 'react-icons/si';
 
-import { BsGithub } from 'react-icons/Bs';
+import { BsGithub } from 'react-icons/bs';
 import { FaPython } from 'react-icons/fa';
 import React from 'react';
 import { motion } from 'framer-motion';
