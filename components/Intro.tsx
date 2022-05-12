@@ -26,6 +26,7 @@ const letter = {
         y: 0,
     },
 };
+
 const Intro = () => {
     const title1 = 'Not Your Average';
     const title2 = 'Software Engineer';
