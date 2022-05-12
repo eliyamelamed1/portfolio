@@ -35,7 +35,7 @@ const Intro = () => {
                 <motion.h1 variants={sentence} initial='hidden' animate='visible'>
                     {title1.split('').map((char, index) => {
                         return (
-                            <motion.span className={styles.title1} key={char + '-' + index} variants={letter}>
+                            <motion.span className={styles.title1} key={index} variants={letter}>
                                 {char}
                             </motion.span>
                         );
@@ -44,7 +44,7 @@ const Intro = () => {
                     <span>
                         {title2.split('').map((char, index) => {
                             return (
-                                <motion.span key={char + '-' + index} variants={letter}>
+                                <motion.span key={index} variants={letter}>
                                     {char}
                                 </motion.span>
                             );
