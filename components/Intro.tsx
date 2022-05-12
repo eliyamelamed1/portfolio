@@ -69,28 +69,43 @@ const Intro = () => {
                         x: '-100vw',
                     }}
                     animate={{ x: 0, type: 'spring' }}
-                    transition={{ type: 'spring', stiffness: 120 }}
+                    transition={{ type: 'spring', stiffness: 100 }}
                 >
                     <UIButton>Download CV</UIButton>
                 </motion.a>
-                <motion.div
-                    className={styles.contactContainer}
-                    initial={{
-                        opacity: 0,
-                    }}
-                    animate={{
-                        opacity: 1,
-                    }}
-                    transition={{ duration: 2 }}
-                >
-                    <GitHubIcon
-                        className={styles.contactIcons}
-                        onClick={typeof window !== 'undefined' ? () => window.open(outerLinks.github) : () => null}
-                    />
-                    <LinkedInIcon
-                        className={styles.contactIcons}
-                        onClick={typeof window !== 'undefined' ? () => window.open(outerLinks.linkedin) : () => null}
-                    />
+                <motion.div className={styles.contactContainer}>
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                        }}
+                        animate={{
+                            opacity: 1,
+                        }}
+                        transition={{ duration: 1 }}
+                        whileHover={{ scale: 1.5 }}
+                    >
+                        <GitHubIcon
+                            className={styles.contactIcons}
+                            onClick={typeof window !== 'undefined' ? () => window.open(outerLinks.github) : () => null}
+                        />
+                    </motion.div>
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                        }}
+                        animate={{
+                            opacity: 1,
+                        }}
+                        transition={{ duration: 1 }}
+                        whileHover={{ scale: 1.5 }}
+                    >
+                        <LinkedInIcon
+                            className={styles.contactIcons}
+                            onClick={
+                                typeof window !== 'undefined' ? () => window.open(outerLinks.linkedin) : () => null
+                            }
+                        />
+                    </motion.div>
                 </motion.div>
             </section>
             <motion.i
@@ -100,9 +115,6 @@ const Intro = () => {
                     type: 'spring',
                     damping: 20,
                     duration: 2,
-                }}
-                whileHover={{
-                    scale: 1.4,
                 }}
             >
                 <Image src={IntroImage.src} alt='project' quality={100} layout='responsive' width={1} height={0.8} />

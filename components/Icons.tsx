@@ -62,14 +62,7 @@ const Icons = () => {
         <motion.div variants={parent} className={styles.iconsContainer} initial='hidden' animate='visible'>
             {iconList.map((icon, index) => {
                 return (
-                    <motion.section
-                        className={styles.skillIcons}
-                        key={index}
-                        variants={child}
-                        whileHover={{
-                            scale: [1.7, 1],
-                        }}
-                    >
+                    <motion.section className={styles.skillIcons} key={index} variants={child}>
                         {icon}
                     </motion.section>
                 );
