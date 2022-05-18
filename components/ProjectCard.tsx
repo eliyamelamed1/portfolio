@@ -11,7 +11,7 @@ const ProjectCard = () => {
     const project = projectsObj[projectId];
     return (
         <div className={styles.container}>
-            <ImageSlider imageArray={project.imageArray} />
+            <ImageSlider videoArray={project.videoArray} />
             <h1>
                 <span>{project.projectName}</span>
             </h1>

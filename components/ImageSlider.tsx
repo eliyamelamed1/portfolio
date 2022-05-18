@@ -3,16 +3,15 @@ import 'swiper/css/pagination';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import Image from 'next/image';
 import { Pagination } from 'swiper';
 import React from 'react';
 import styles from '../styles/components/ImageSlider.module.scss';
 
 interface PropTypes {
-    imageArray: any[];
+    videoArray: any[];
 }
 
-export default function ImageSlider({ imageArray }: PropTypes) {
+export default function ImageSlider({ videoArray }: PropTypes) {
     return (
         <div className={styles.container}>
             <Swiper
@@ -23,19 +22,12 @@ export default function ImageSlider({ imageArray }: PropTypes) {
                 modules={[Pagination]}
                 className='mySwiper'
             >
-                {imageArray.map((imageSrc, index) => {
+                {videoArray.map((imageSrc, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <i>
-                                <Image
-                                    src={imageSrc}
-                                    quality={100}
-                                    layout='responsive'
-                                    width={16}
-                                    height={9}
-                                    alt='project'
-                                />
-                            </i>
+                            <video loop controls>
+                                <source src={imageSrc} type='video/mp4' />
+                            </video>
                         </SwiperSlide>
                     );
                 })}
