@@ -1,3 +1,7 @@
+import tractor from '../assets/tractor.bmp';
+import weather from '../assets/weather.bmp';
+import zbite from '../assets/zbite.bmp';
+
 export const outerLinks = {
     github: 'https://github.com/eliyamelamed1',
     linkedin: 'https://www.linkedin.com/in/eliyamelamed1/',
@@ -18,6 +22,7 @@ export const projectsObj = {
         technologies:
             'PostgreSQL, Python, TypeScript, Django, React, Next, Sass/CSS, Material UI, Pytest, Jest, ElasticSearch.',
         videoArray: ['/zbiteDesktop.mp4', '/zbitePhone.mp4', '/zbiteAdmin.mp4', '/zbiteRedoc.mp4'],
+        image: zbite.src,
         links: {
             code: 'https://github.com/eliyamelamed1/zbite',
             website: 'https://zbite.vercel.app',
@@ -37,6 +42,7 @@ export const projectsObj = {
         ],
         technologies: 'TypeScript, React, Sass/CSS, Material UI',
         videoArray: ['/weatherDesktop.mp4', '/weatherPhone.mp4'],
+        image: weather.src,
         links: {
             code: 'https://github.com/eliyamelamed1/WeatherApp',
             website: 'https://weather-app-eliyamelamed1.vercel.app/',
@@ -54,6 +60,7 @@ export const projectsObj = {
         ],
         technologies: 'TypeScript, Next.js, React, Sass/CSS, Material UI',
         videoArray: ['/seoWebsiteDesktop.mp4', '/seoWebsitePhone.mp4'],
+        image: tractor.src,
         links: {
             code: 'https://github.com/eliyamelamed1/seo-website',
             website: 'https://seo-website-pi.vercel.app/',
