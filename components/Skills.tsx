@@ -18,7 +18,7 @@ const BackendSkills = () => (
             implementing clean quality code
         </p>
         <h2>Technologies</h2>
-        <span>Python, Django, Django REST framework, PostgreSQL, Pytest</span>
+        <span>Python | Django | Django REST framework | PostgreSQL | Pytest</span>
     </motion.section>
 );
 const GeneralSkills = () => (
@@ -29,7 +29,7 @@ const GeneralSkills = () => (
             on a daily basis
         </p>
         <h2>Technologies</h2>
-        <span>GIT, Figma, Heroku, Vercel, Docker, ElasticSearch, Pygame, SendGrid</span>
+        <span>GIT | Figma | Heroku | Vercel | Docker | ElasticSearch | Pygame | SendGrid</span>
     </motion.section>
 );
 
@@ -40,7 +40,9 @@ const FrontendSkills = () => (
             Adept at analyzing requirements to ensure optimal performance, quality, and responsiveness of applications.
         </p>
         <h2>Technologies</h2>
-        <span>TypeScript, JavaScript, React.js, Next.js, Material UI, Jest, Framer Motion, Scss, Css, react-query</span>
+        <span>
+            TypeScript | JavaScript | React.js | Next.js | Material UI | Jest | Framer Motion | Scss | Css | react-query
+        </span>
     </motion.section>
 );
 
