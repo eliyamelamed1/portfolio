@@ -50,7 +50,7 @@ export const projectsObj = {
     },
     tractor: {
         id: 'tractor',
-        projectName: 'Tractors.fr',
+        projectName: 'Matractopelle.fr',
         description: 'a Beautiful Website I built and designed for my client in the construction industry',
         bullets: [
             '● Connected to a postal code and city API to ease the searching process for customers',
@@ -63,7 +63,7 @@ export const projectsObj = {
         image: tractor.src,
         links: {
             code: 'https://github.com/eliyamelamed1/seo-website',
-            website: 'https://seo-website-pi.vercel.app/',
+            website: 'https://www.matractopelle.fr/',
         },
     },
 };
