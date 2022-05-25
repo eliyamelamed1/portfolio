@@ -31,8 +31,7 @@ export const projectsObj = {
     weather: {
         id: 'weather',
         projectName: 'weatherApp',
-        description:
-            'A simple, responsive, web app in react that shows the weather of searched city. The user should is able to search for a city and save it to favorites.',
+        description: 'A simple, responsive, web app in react that shows the weather of a chosen city.',
         bullets: [
             '● User can toggle between temperature units (Celsius / Fahrenheit)',
             '● initial default weather is based on the user location',
@@ -51,7 +50,7 @@ export const projectsObj = {
     tractor: {
         id: 'tractor',
         projectName: 'Matractopelle.fr',
-        description: 'a Beautiful Website I built and designed for my client in the construction industry',
+        description: 'a Beautiful Website I built and designed for my client of the construction industry',
         bullets: [
             '● Connected to a postal code and city API to ease the searching process for customers',
             '● Wrote the app using Next.js with keen focus of improving SEO rating',
