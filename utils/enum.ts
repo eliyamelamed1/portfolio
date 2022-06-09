@@ -1,3 +1,4 @@
+import seriesGuide from '../assets/seriesGuide.bmp';
 import tractor from '../assets/tractor.bmp';
 import weather from '../assets/weather.bmp';
 import zbite from '../assets/zbite.bmp';
@@ -63,6 +64,25 @@ export const projectsObj = {
         links: {
             code: 'https://github.com/eliyamelamed1/seo-website',
             website: 'https://www.matractopelle.fr/',
+        },
+    },
+    seriesGuide: {
+        id: 'seriesGuide',
+        projectName: 'Series Guide',
+        description: 'A simple, responsive, web app in react that shows the details of tv shows.',
+        bullets: [
+            '● Connected to a tv shows API which displays some details on each show',
+            '● Implemented Searchbar that support Autocomplete',
+            '● Implemented Infinite Scroll using react query',
+            '● support dark/light theme mode',
+            '● Animations included',
+        ],
+        technologies: 'React, scss, material-ui, react-query, TypeScript',
+        videoArray: [],
+        image: seriesGuide.src,
+        links: {
+            code: 'https://github.com/eliyamelamed1/series-guide',
+            website: 'https://series-guide.vercel.app/',
         },
     },
 };

@@ -12,7 +12,7 @@ import React from 'react';
 import UIPopover from './UI/UIPopover';
 import { motion } from 'framer-motion';
 import { projectsObj } from '../utils/enum';
-import snailon from '../assets/snailon.bmp';
+import seriesGuide from '../assets/seriesGuide.bmp';
 import styles from '../styles/components/Projects.module.scss';
 import tractor from '../assets/tractor.bmp';
 import weather from '../assets/weather.bmp';
@@ -34,6 +34,9 @@ const Projects = () => {
                     <ProjectCard />
                 </UIPopover>
                 <UIPopover imageSrc={weather.src} id={projectsObj.weather.id}>
+                    <ProjectCard />
+                </UIPopover>
+                <UIPopover imageSrc={seriesGuide.src} id={projectsObj.seriesGuide.id}>
                     <ProjectCard />
                 </UIPopover>
             </div>
