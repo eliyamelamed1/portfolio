@@ -1,11 +1,11 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Image from 'next/image';
 import { Pagination } from 'swiper';
+import React from 'react';
 import styles from '../styles/components/ImageSlider.module.scss';
 
 interface PropTypes {
@@ -14,7 +14,6 @@ interface PropTypes {
 }
 
 export default function ImageSlider({ videoArray, image }: PropTypes) {
-    useEffect;
     return (
         <div className={styles.container}>
             <Swiper
@@ -38,7 +37,7 @@ export default function ImageSlider({ videoArray, image }: PropTypes) {
                 {videoArray.map((imageSrc, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <video loop autoPlay>
+                            <video loop controls>
                                 <source src={imageSrc} type='video/mp4' />
                             </video>
                         </SwiperSlide>
