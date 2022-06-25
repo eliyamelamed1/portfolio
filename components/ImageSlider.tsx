@@ -37,7 +37,7 @@ export default function ImageSlider({ videoArray, image }: PropTypes) {
                 {videoArray.map((imageSrc, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <video loop controls>
+                            <video loop controls preload='auto'>
                                 <source src={imageSrc} type='video/mp4' />
                             </video>
                         </SwiperSlide>
