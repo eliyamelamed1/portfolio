@@ -22,7 +22,6 @@ export const projectsObj = {
         ],
         technologies:
             'PostgreSQL, Python, TypeScript, Django, React, Next, Sass/CSS, Material UI, Pytest, Jest, ElasticSearch.',
-        videoArray: ['/zbiteDesktop.mp4', '/zbitePhone.mp4', '/zbiteAdmin.mp4', '/zbiteRedoc.mp4'],
         image: zbite.src,
         links: {
             code: 'https://github.com/eliyamelamed1/zbite',
@@ -41,7 +40,6 @@ export const projectsObj = {
             '● Animations included',
         ],
         technologies: 'TypeScript, React, Sass/CSS, Material UI',
-        videoArray: ['/weatherDesktop.mp4', '/weatherPhone.mp4'],
         image: weather.src,
         links: {
             code: 'https://github.com/eliyamelamed1/WeatherApp',
@@ -59,7 +57,6 @@ export const projectsObj = {
             '● Implemented Searchbar that support Autocomplete',
         ],
         technologies: 'TypeScript, Next.js, React, Sass/CSS, Material UI',
-        videoArray: ['/seoWebsiteDesktop.mp4', '/seoWebsitePhone.mp4'],
         image: tractor.src,
         links: {
             code: 'https://github.com/eliyamelamed1/seo-website',
@@ -78,7 +75,6 @@ export const projectsObj = {
             '● Animations included',
         ],
         technologies: 'React, scss, material-ui, react-query, TypeScript',
-        videoArray: [],
         image: seriesGuide.src,
         links: {
             code: 'https://github.com/eliyamelamed1/series-guide',

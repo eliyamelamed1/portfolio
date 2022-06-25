@@ -33,16 +33,6 @@ export default function ImageSlider({ videoArray, image }: PropTypes) {
                         <Image src={image} layout='responsive' width={16} height={9} alt='project' quality={100} />
                     </i>
                 </SwiperSlide>
-
-                {videoArray.map((imageSrc, index) => {
-                    return (
-                        <SwiperSlide key={index}>
-                            <video loop controls preload='auto'>
-                                <source src={imageSrc} type='video/mp4' />
-                            </video>
-                        </SwiperSlide>
-                    );
-                })}
             </Swiper>
         </div>
     );
