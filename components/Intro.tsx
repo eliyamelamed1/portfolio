@@ -64,8 +64,7 @@ const Intro = () => {
                     Fullstack developer with a flair for writing elegant solutions and thinking outside of the box
                 </motion.p>
                 <motion.a
-                    // href='Eliya+Melamed+Resume.pdf'
-                    href='favicon.ico'
+                    href='Eliya+Melamed+Resume.pdf'
                     download
                     initial={{
                         x: '-100vw',
