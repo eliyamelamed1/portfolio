@@ -11,6 +11,8 @@ const Contact = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
 
+
+
         try {
             await emailjs.sendForm('service_ul302nl', 'template_y6wdpnr', form.current, 'JfIaPcyIDQHYxoOel');
             toast.success('Email Sent Successfully');
