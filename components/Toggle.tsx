@@ -19,6 +19,7 @@ const Toggle = () => {
         if (theme === 'light') return setTheme('dark');
         setTheme('light');
     };
+
     return (
         <motion.div
             className={styles.toggle}
